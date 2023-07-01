@@ -1,0 +1,16 @@
+PODS:
+  - RiveRuntime (3.1.10)
+
+DEPENDENCIES:
+  - RiveRuntime
+
+SPEC REPOS:
+  trunk:
+    - RiveRuntime
+
+SPEC CHECKSUMS:
+  RiveRuntime: 867d558610d1f783b8d46e41169aaad52b1e5f75
+
+PODFILE CHECKSUM: 638ad3be0346793ce1c2674b59a0a9462b51f465
+
+COCOAPODS: 1.12.1

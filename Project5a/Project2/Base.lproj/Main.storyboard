@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4NY-cI-Rbg">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbd-yz-5GG">
+                                <rect key="frame" x="84.666666666666686" y="144" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wbd-yz-5GG" secondAttribute="height" multiplier="112:57" id="daS-S2-Rb9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jxv-gu-prC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbJ-b4-Beq">
+                                <rect key="frame" x="84.666666666666686" y="432" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AbJ-b4-Beq" secondAttribute="height" multiplier="112:57" id="39D-Pf-Ad0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYj-xi-WVM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewu-qP-rQI">
+                                <rect key="frame" x="84.666666666666686" y="288" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ewu-qP-rQI" secondAttribute="height" multiplier="112:57" id="CrO-PE-GKn"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="drH-Nn-5wn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AbJ-b4-Beq" firstAttribute="height" secondItem="Ewu-qP-rQI" secondAttribute="height" id="7L5-rA-ORh"/>
+                            <constraint firstItem="AbJ-b4-Beq" firstAttribute="top" secondItem="Ewu-qP-rQI" secondAttribute="bottom" constant="30" id="N2x-MR-DRo"/>
+                            <constraint firstItem="Ewu-qP-rQI" firstAttribute="height" secondItem="wbd-yz-5GG" secondAttribute="height" id="TKw-Zw-9FJ"/>
+                            <constraint firstItem="AbJ-b4-Beq" firstAttribute="centerX" secondItem="Ewu-qP-rQI" secondAttribute="centerX" id="WaT-o9-lYR"/>
+                            <constraint firstItem="wbd-yz-5GG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dGv-wn-1wb"/>
+                            <constraint firstItem="wbd-yz-5GG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="ilP-5n-JZe"/>
+                            <constraint firstItem="Ewu-qP-rQI" firstAttribute="top" secondItem="wbd-yz-5GG" secondAttribute="bottom" constant="30" id="lKm-yh-3s7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AbJ-b4-Beq" secondAttribute="bottom" constant="272" id="tLX-tq-y9J"/>
+                            <constraint firstItem="Ewu-qP-rQI" firstAttribute="centerX" secondItem="wbd-yz-5GG" secondAttribute="centerX" id="yHd-ch-Pb6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4r5-ct-sMF"/>
+                    <connections>
+                        <outlet property="Button1" destination="wbd-yz-5GG" id="Rnm-EE-ETb"/>
+                        <outlet property="Button2" destination="Ewu-qP-rQI" id="AxL-vS-Hcq"/>
+                        <outlet property="Button3" destination="AbJ-b4-Beq" id="qIB-SK-118"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XuV-k6-cXe">
+            <objects>
+                <navigationController id="4NY-cI-Rbg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t2g-ro-3Db">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fdc-c6-yPR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcm-U4-dXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-697" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

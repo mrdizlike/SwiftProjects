@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-HeavyItalic.otf">
+            <string>SFProDisplay-HeavyItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Smile_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Без имени-1" translatesAutoresizingMaskIntoConstraints="NO" id="35P-tF-WJZ">
+                                <rect key="frame" x="132" y="96" width="111" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7gc-iG-Kp3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="CTk-9M-Pu7">
+                                <rect key="frame" x="16" y="357" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="TmO-AV-bvc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-HeavyItalic" family="SF Pro Display" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="RSq-t6-YAc">
+                                <rect key="frame" x="16" y="671" width="343" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="IW0-gS-s1h"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Поддержать разработчика">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="SFProDisplay-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-8z-GK0">
+                                <rect key="frame" x="74" y="610" width="227" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ev4-lt-aFx"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Настроить перерыв между уведомлениями">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="0.57999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="SFProDisplay-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ecd-8z-GK0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="6Wr-Nj-w25"/>
+                            <constraint firstItem="35P-tF-WJZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="8sk-72-oPD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RSq-t6-YAc" secondAttribute="bottom" constant="43" id="VsX-Qb-lpA"/>
+                            <constraint firstItem="CTk-9M-Pu7" firstAttribute="trailing" secondItem="RSq-t6-YAc" secondAttribute="trailing" id="Xsn-IH-Kaw"/>
+                            <constraint firstItem="CTk-9M-Pu7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="357" id="hRj-XZ-Vw6"/>
+                            <constraint firstItem="ecd-8z-GK0" firstAttribute="centerX" secondItem="RSq-t6-YAc" secondAttribute="centerX" id="max-lJ-RKr"/>
+                            <constraint firstItem="35P-tF-WJZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="nQ5-GR-spJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ecd-8z-GK0" secondAttribute="bottom" constant="88" id="pea-h9-CVl"/>
+                            <constraint firstItem="CTk-9M-Pu7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pxN-YA-INd"/>
+                            <constraint firstItem="CTk-9M-Pu7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rkS-Ph-nDm"/>
+                            <constraint firstItem="35P-tF-WJZ" firstAttribute="centerX" secondItem="CTk-9M-Pu7" secondAttribute="centerX" id="rwr-lc-zwk"/>
+                            <constraint firstItem="CTk-9M-Pu7" firstAttribute="leading" secondItem="RSq-t6-YAc" secondAttribute="leading" id="tA6-AI-qcp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeHoursLabel" destination="ecd-8z-GK0" id="FZn-vY-6hL"/>
+                        <outlet property="donationLabel" destination="RSq-t6-YAc" id="apu-8m-Ug4"/>
+                        <outlet property="mainTextLabel" destination="CTk-9M-Pu7" id="1yO-nC-jGC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="2.9556650246305418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Без имени-1" width="320" height="320"/>
+    </resources>
+</document>
